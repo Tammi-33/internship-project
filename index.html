@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read - Online Bookstore</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@1.14.0/dist/full.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .hero {
+            background-image: url('IMG/background3.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+        .social-media a {
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+.social-media a:hover {
+    color: #007bff;
+}
+
+        
+    </style>
+</head>
+<body class="font-sans">
+    <header class="bg-white text-black p-5 flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="IMG/logo-rbg.png" alt="Logo" class="h-16 mr-3">
+            <h1 class="text-3xl">Online Bookstore</h1>
+        </div>
+        <nav class="flex space-x-5">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="cart.html">Cart</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav>
+    </header>
+    
+    
+    <main class="hero flex items-center justify-start text-white pl-10"> 
+        <div>
+            <h4 class="text-2xl text-black">Trade-in Offer</h4>
+            <h2 class="text-5xl font-bold text-black" style="color: darkcyan;"> Super Value Deals<br> On All Products</h2>
+            <h5 class="text-lg mt-4 text-gray-500">Save more with coupons & up to 70% off!</h5>
+            <a href="shop.html" style="background-color: white; color: black; border-radius: 0; border-color: transparent;" class="btn border border-black mt-5 hover:bg-teal-500 hover:text-white transition duration-300" onmouseover="this.style.backgroundColor='#088178';" 
+            onmouseout="this.style.backgroundColor='white';">Shop Now</a>
+
+            
+        </div>
+    </main>
+    <section class="py-10">
+        <h2 class="text-3xl text-center mb-5" style="color: #088178; font-weight: 600;">Why Choose Us?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-6 p-5">
+            <div class="text-center">
+                <div class="flex flex-col items-center">
+                    <img src="IMG/free-delivery.jpg" alt="Free Delivery" class="mb-3 h-24"> 
+                    <h3 class="font-semibold">Free Delivery</h3>
+                    <p>Get your books delivered at no extra cost!</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <div class="flex flex-col items-center">
+                    <img src="IMG/online-order.png" alt="Online Order" class="mb-3 h-24"> 
+                    <h3 class="font-semibold">Online Order</h3>
+                    <p>Order your favorite books online from the comfort of your home.</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <div class="flex flex-col items-center">
+                    <img src="IMG/save-money.jpg" alt="Save Money" class="mb-3 h-24"> 
+                    <h3 class="font-semibold">Save Money</h3>
+                    <p>Enjoy discounts and promotions on your purchases.</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <div class="flex flex-col items-center">
+                    <img src="IMG/promotions.png" alt="Promotions" class="mb-3 h-24">
+                    <h3 class="font-semibold">Promotions</h3>
+                    <p>Check out our latest offers and promotions!</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <div class="flex flex-col items-center">
+                    <img src="IMG/247.jpg" alt="Some Other Benefit" class="mb-3 h-24"> 
+                    <h3 class="font-semibold">24/7</h3>
+                    <p>Support Services</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    
+
+    <section class="py-10">
+        <h2 class="text-3xl text-center mb-5">Featured Products</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-5">
+            <div class="border p-5 rounded">
+                <img src="IMG/islamic.png" alt="Book Title 1" class="mb-3 w-full h-48 object-contain"> 
+                <h3 class="text-lg">Ar-Raheeq Al-Makhtum</h3>
+                <p>Author: Safiur Rahman Mubarakpuri</p>
+                <p>Price: $10</p>
+                <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-300" onclick="addToCart('Ar-Raheeq Al-Makhtum', 10)">Add to Cart</button>
+            </div>
+            <div class="border p-5 rounded">
+                <img src="IMG/morrie.jpg" alt="Book Title 2" class="mb-3 w-full h-48 object-contain"> 
+                <h3 class="text-lg">Tuesdays With Morrie</h3>
+                <p>Author: Mitch Albom</p>
+                <p>Price: $15</p>
+                <button class="bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-700 transition duration-300" onclick="addToCart('Tuesdays With Morrie', 15)">Add to Cart</button>
+            </div>
+            <div class="border p-5 rounded">
+                <img src="IMG/sholmes.jpg" alt="Book Title 3" class="mb-3 w-full h-48 object-contain"> 
+                <h3 class="text-lg">The Adventures of Sherlock Holmes</h3>
+                <p>Author: Sir Arthur Conan Doyle</p>
+                <p>Price: $30</p>
+                <button class="bg-red-500 text-white font-bold py-2 px-4 rounded hover:bg-red-700 transition duration-300" onclick="addToCart('The Adventures of Sherlock Holmes', 30)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+
+    <section class="banner py-10 text-center bg-cover bg-center" style="background-image: url('IMG/banner.jpg');">
+        <div class="bg-opacity-50 p-5">
+            <h4  class="text-white">Repair Services</h4>
+            <h2 class="text-4xl font-bold text-white mb-5">Up to <span style="color: red;">70% Off!</span> On All Genres Of Book!!!</h2>
+            <a href="shop.html" class="btn" style="background-color: darkcyan; color: white; border:none; border-radius: 0; " 
+   onmouseover="this.style.backgroundColor='black';" 
+   onmouseout="this.style.backgroundColor='darkcyan';">
+   Explore More
+</a>
+
+        </div>
+    </section>
+
+
+
+    <section class="py-10 px-5 bg-gray-100">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+            
+            <div>
+                <h2 class="text-3xl text-left mb-2">Sign Up for Our Newsletter</h2>
+                <h3 class="text-lg text-left text-gray-600">Get updates on the latest deals and offers.</h3>
+            </div>
+            
+            <div class="flex justify-end items-center space-x-2">
+                <input type="email" placeholder="Enter your email" class="input input-bordered w-full md:w-auto" />
+                <button class="btn  hover:bg-teal-500" style="background-color: deeppink; color: white; border: none;">Subscribe</button>
+            </div>
+        </div>
+    </section>
+    
+    
+    <footer class="bg-gray-800 text-white p-5">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-5">
+            
+            <div>
+                <h3 class="text-lg font-semibold">Contact Us</h3>
+                <p>Address: 18 Abdul Aziz Sorok, Aruapara, Kushtia.</p>
+                <p>Phone: (+880) 1234567890</p>
+                <p>Email: support@onlinebookstore.com</p>
+    
+                
+                <div class="social-media mt-3">
+                    <p>Follow us:</p>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            
+            <div>
+                <h3 class="text-lg font-semibold">About Us</h3>
+                <ul>
+                    <li><a href="aboutus.html" class="hover:text-blue-400">About</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Delivery Information</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Terms and Conditions</a></li>
+                    <li><a href="contactus.html" class="hover:text-blue-400">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            
+            <div>
+                <h3 class="text-lg font-semibold">My Account</h3>
+                <ul>
+                    <li><a href="#" class="hover:text-blue-400">My Account</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Sign In</a></li>
+                    <li><a href="cart.html" class="hover:text-blue-400">View Cart</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Track My Order</a></li>
+                    <li><a href="#" class="hover:text-blue-400">My Wishlist</a></li>
+                </ul>
+            </div>
+            
+            
+            <div>
+                <h3 class="text-lg font-semibold">Install App</h3>
+                <p>From Apple Store or Google Play:</p>
+                <div class="flex items-center space-x-4 mt-2">
+                    <a href="https://www.apple.com/app-store/" target="_blank" class="flex justify-center items-center">
+                        <i class="fab fa-apple h-8 w-8 text-white hover:text-blue-400 transition duration-300"></i>
+                    </a>
+                    <a href="https://play.google.com/store" target="_blank" class="flex justify-center items-center">
+                        <i class="fab fa-google-play h-8 w-8 text-white hover:text-blue-400 transition duration-300"></i>
+                    </a>
+                </div>
+                
+                <p class="mt-4">Secured Payment Gateways:</p>
+                <div class="flex items-center space-x-4 mt-2">
+                    <i class="fab fa-visa h-8 w-8"></i>
+                    <i class="fab fa-cc-mastercard h-8 w-8"></i>
+                </div>
+            </div>
+        </div>
+        
+        <p class="text-center mt-5">&copy; 2024 READ - Online Bookstore by Shafi Tamanna</p> 
+    </footer>
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>

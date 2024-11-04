@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Online Bookstore</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@1.14.0/dist/full.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="bg-white text-black p-5 flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="IMG/logo-rbg.png" alt="Logo" class="h-16 mr-3">
+            <h1 class="text-3xl">Cart</h1>
+        </div>
+        <nav class="flex space-x-5">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="cart.html">Cart</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav>
+    </header>
+    
+    
+    <main class="p-5 " style="background-color: gold;">
+        <h2 class="text-2xl">Items in Your Cart</h2>
+        <div class="mt-4" id="cart-items"></div>
+        <div class="mt-5">
+            <input type="text" id="coupon-code" placeholder="Apply Coupon" class="input">
+            <button class="btn" onclick="applyCoupon()">Apply</button>
+        </div>
+        <div class="mt-5">
+            <p id="cart-total">Total: $0.00</p>
+            <button class="btn btn-primary" onclick="checkout()">Checkout</button>
+        </div>
+    </main>
+    
+    <footer class="text-center p-5 mt-20">
+        <p>&copy; 2024 Online Bookstore</p>
+    </footer>
+</body>
+</html>

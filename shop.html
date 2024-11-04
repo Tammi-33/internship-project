@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Online Bookstore</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="bg-white text-black p-5 flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="IMG/logo-rbg.png" alt="Logo" class="h-16 mr-3">
+            <h1 class="text-3xl">Shop</h1>
+        </div>
+        <nav class="flex space-x-5">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="cart.html">Cart</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav>
+    </header>
+    
+    
+    <main class="p-5">
+        <h2 class="text-2xl">Our Books</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="border p-5 rounded">
+                <img src="IMG/eatpraylove.jpg" alt=" " class="mb-3 w-full h-48 object-contain">
+                <h3 class="text-lg">EAT PRAY LOVE</h3>
+                <p>Author: Elizabeth Gilbert</p>
+                <p>Price: $15</p>
+                <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-300" onclick="addToCart('EAT PRAY LOVE', 15)">
+                    Add to Cart
+                </button>
+            </div>
+            <div class="border p-5 rounded">
+                <img src="IMG/gulistan.jpg" alt=" " class="mb-3 w-full h-48 object-contain">
+                <h3 class="text-lg">Gulistan</h3>
+                <p>Author: Saadi Shirazi</p>
+                <p>Price: $12</p>
+                <button class="bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-700 transition duration-300" onclick="addToCart('Gulistan', 12)">
+                    Add to Cart
+                </button>
+            </div>
+            <div class="border p-5 rounded">
+                <img src="IMG/harry-potter.jpeg" alt="Book Title 3" class="mb-3 w-full h-48 object-contain">
+                <h3 class="text-lg">Harry Porter Series</h3>
+                <p>Author: J K Rowling</p>
+                <p>Price: $100</p>
+                <button class="bg-red-500 text-white font-bold py-2 px-4 rounded hover:bg-red-700 transition duration-300" onclick="addToCart('Harry Porter Series', 100)">
+                    Add to Cart
+                </button>
+            </div>
+            <div class="border p-5 rounded">
+                <img src="IMG/life of pi.jpg" alt=" " class="mb-3 w-full h-48 object-contain">
+                <h3 class="text-lg">Life of pi</h3>
+                <p>Author: Yann Martel</p>
+                <p>Price: $18</p>
+                <button class="bg-red-500 text-white font-bold py-2 px-4 rounded hover:bg-red-700 transition duration-300" onclick="addToCart('Life of pi', 18)">
+                    Add to Cart
+                </button>
+            </div>
+            <div class="border p-5 rounded">
+                <img src="IMG/islamic.png" alt=" " class="mb-3 w-full h-48 object-contain">
+                <h3 class="text-lg">Ar-Raheeq Al-Makhtum</h3>
+                <p>Author: Safiur Rahman Mubarakpuri</p>
+                <p>Price: $10</p>
+                <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-300" onclick="addToCart('Ar-Raheeq Al-Makhtum', 10)">
+                    Add to Cart
+                </button>
+            </div>
+            <div class="border p-5 rounded">
+                <img src="IMG/morrie.jpg" alt=" " class="mb-3 w-full h-48 object-contain">
+                <h3 class="text-lg">Tuesdays With Morrie</h3>
+                <p>Author: Mitch Albom</p>
+                <p>Price: $15</p>
+                <button class="bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-700 transition duration-300" onclick="addToCart('Tuesdays With Morrie' , 15)">
+                    Add to Cart
+                </button>
+            </div>
+            <div class="border p-5 rounded">
+                <img src="IMG/nazrul.jpg" alt=" " class="mb-3 w-full h-48 object-contain">
+                <h3 class="text-lg">Bibidh</h3>
+                <p>Author: Kazi Nazrul Islam</p>
+                <p>Price: $8</p>
+                <button class="bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-700 transition duration-300" onclick="addToCart('Bibidh', 8)">
+                    Add to Cart
+                </button>
+            </div>
+            <div class="border p-5 rounded">
+                <img src="IMG/sholmes.jpg" alt="Book Title 2" class="mb-3 w-full h-48 object-contain">
+                <h3 class="text-lg">The Adventures of Sherlock Holmes</h3>
+                <p>Author: Sir Arthur Conan Doyle</p>
+                <p>Price: $30</p>
+                <button class="bg-red-500 text-white font-bold py-2 px-4 rounded hover:bg-red-700 transition duration-300" onclick="addToCart('The Adventures of Sherlock Holmes', 30)">
+                    Add to Cart
+                </button>
+            </div>
+            <div class="border p-5 rounded">
+                <img src="IMG/steal.jpg" alt="Book Title 2" class="mb-3 w-full h-48 object-contain">
+                <h3 class="text-lg">Steal Like An Artist</h3>
+                <p>Author: Austin Kleon</p>
+                <p>Price: $15</p>
+                <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-300" onclick="addToCart('Steal Like An Artist', 15)">
+                    Add to Cart
+                </button>
+            </div>
+            <div class="border p-5 rounded">
+                <img src="IMG/cmtp.jpg" alt=" " class="mb-3 w-full h-48 object-contain">
+                <h3 class="text-lg">The Mythical Man-Month</h3>
+                <p>Author: Fred Brooks</p>
+                <p>Price: $25</p>
+                
+                <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-300" onclick="addToCart('The Mythical Man-Month', 25)">
+                    Add to Cart
+                </button>
+            </div>
+            <div class="border p-5 rounded">
+                <img src="IMG/cmtp2.jpeg" alt=" " class="mb-3 w-full h-48 object-contain">
+                <h3 class="text-lg">Clean Code</h3>
+                <p>Author: Robert Cecil Martin</p>
+                <p>Price: $26</p>
+                <button class="bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-700 transition duration-300" onclick="addToCart('Clean Code', 26)">
+                    Add to Cart
+                </button>
+            </div>
+            <div class="border p-5 rounded">
+                <img src="IMG/cmtp3jpg.jpg" alt=" " class="mb-3 w-full h-48 object-contain">
+                <h3 class="text-lg">Code Complete</h3>
+                <p>Author: Steve McConnell</p>
+                <p>Price: $25</p>
+                <button class="bg-red-500 text-white font-bold py-2 px-4 rounded hover:bg-red-700 transition duration-300" onclick="addToCart('Code Complete', 25)">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="text-center p-5 mt-20">
+        <p>&copy; 2024 Online Bookstore</p>
+    </footer>
+</body>
+</html>
